@@ -11,10 +11,10 @@ function Navbar(){
             <nav>
                 <img src="/IITG.jpg" id="logo"></img>
                 <ul id="large-ul">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="program.html">PROGRAM</a></li>
-                    <li><a href="speaker.html">SPEAKERS</a></li>
-                    <li><a href="form.html">REGISTRATION</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/program">PROGRAM</a></li>
+                    <li><a href="/speakers">SPEAKERS</a></li>
+                    <li><a href="/form">REGISTRATION</a></li>
                 </ul>
                 <div className="toggle">
                     {!click && <button id="button1" onClick={toggleButtons}><img src="/menu.png"></img></button>}

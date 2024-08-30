@@ -20,10 +20,10 @@ function Navbar(){
                     {!click && <button id="button1" onClick={toggleButtons}><img src="/menu.png"></img></button>}
                     {click && <><button id="button2" onClick={toggleButtons}><img src="/close.png"></img></button>
                     <ul id="small-ul">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="program.html">PROGRAM</a></li>
-                        <li><a href="speaker.html">SPEAKERS</a></li>
-                        <li><a href="form.html">REGISTRATION</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/program">PROGRAM</a></li>
+                        <li><a href="/speaker">SPEAKERS</a></li>
+                        <li><a href="/form">REGISTRATION</a></li>
                     </ul></>
                     }
                 </div>

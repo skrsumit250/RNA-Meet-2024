@@ -1,6 +1,9 @@
 import '../style.css';
 import '../styling.css';
 function Content(){
+    const sponsors = ['SERB.png','DSS Imagetech.jpeg','Merck.png','SPT LabTech.jpg','Cytiva.jpg','Thermo Fisher.jpg','Molbiogen.png',
+                      'Jaldhara.png','Genotypic.png','Tarsons.jpg','Zellebiotech.jpg','Biogeneix.jpg','NECC.png',
+                      'Assam Chemicals & Instruments Corporation.png','Promega.png'];
     return(
         <>
             <div className="latest">
@@ -37,22 +40,9 @@ function Content(){
             <div className="sponsor">
                 <h1>Sponsors</h1>
                 <div className="sponsor-inner">
-                    <img src="/sponsors/SERB.png" alt="sponsor"></img>
-                    <img src="/sponsors/DSS Imagetech.jpeg" alt="sponsor"></img>
-                    <img src="/sponsors/Merck.png" alt="sponsor"></img>
-                    <img src="/sponsors/SPT LabTech.jpg" alt="sponsor"></img>
-                    <img src="/sponsors/Cytiva.jpg" alt="sponsor"></img>
-                    <img src="/sponsors/Thermo Fisher.jpg" alt="sponsor"></img>
-                    <img src="/sponsors/Molbiogen.png" alt="sponsor"></img>
-                    <img src="/sponsors/Jaldhara.png" alt="sponsor"></img>
-                    <img src="/sponsors/Genotypic.png" alt="sponsor"></img>
-                    <img src="/sponsors/Tarsons.jpg" alt="sponsor"></img>
-                    <img src="/sponsors/Zellebiotech.jpg" alt=""></img>
-                    <img src="/sponsors/Biogeneix.jpg" alt="sponsor"></img>
-                    <img src="/sponsors/NECC.png" alt="sponsor"></img>
-                    <img src="/sponsors/Assam Chemicals & Instruments Corporation.png" alt="sponsor"></img>
-                    <img src="/sponsors/Promega.png" alt="sponsor"></img>
-
+                    {sponsors.map((sponser,idx)=>(
+                        <img src={`/sponsors/${sponser}`} key={idx} alt='sponser'></img>
+                    ))}
                 </div>
             </div>
 
